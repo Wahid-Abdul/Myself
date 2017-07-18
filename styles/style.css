@@ -12,9 +12,9 @@ body {
     font-size: 3em;
     text-align: center;
     height: 25vh;
-    width: 100vw;
+    width: 99vw;
     display: block;
-    position: absolute;
+    /* position: absolute; */
     color: white;
     top: 10;
     /* bottom: 0; */
@@ -28,8 +28,4 @@ body {
     position: relative;
     top: -0.14em;
     left: 10px;
-}
-
-.mytext {
-    margin-top: 500px;
 }
