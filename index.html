@@ -11,18 +11,25 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
     <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
 </head>
 
-<body style="background-image: url(assets/coder2.png);background-size:100vh 100vh;background-repeat: no-repeat;background-color: #111">
-    <div style="height:2vh;background-color: brown;margin-top: 4vh;width:90vw;margin-left: auto;margin-right: auto;border-top-left-radius: 5px;border-top-right-radius: 5px;">
-        <strong>&#9746;&#9744;&#9866;</strong>
+<body style="background-image: url(assets/coder2.png);text-align:center;background-size:100vh 100vh;background-repeat: no-repeat;background-color: #111">
+ 
+ <!--<div id="red_resizable" style="border: 2px solid red;height:auto;width: auto;margin:20px auto" >-->
+     
+    
+    <div id="resizable"  class='console-container' style="display:inline-block;padding-top: 0vh;background-color:black;width:90%;margin-left: 0px;margin-right: 0px;margin-top:20px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;font-size: 2em;min-height:200px;">
+        <div  style="height:2vh;background-color:#525049;margin-top: 0;width:100%;margin-left: auto;margin-right: auto;border-top-left-radius: 5px;border-top-right-radius: 5px;padding-bottom: 3px;color:#ddd;font-size: 14px;text-align:left;padding-left:10px">
+        <!--<strong><span style="border:0.5px solid red;border-radius: 50%;background-color: #86857F" >&#9746;</span>&nbsp;<span style="border:0.5px solid red;border-radius: 50%" >&#9744;</span>&nbsp;<span style="border:0.5px solid red;border-radius: 50%" >&#9866;</span>
+        -->
+        &#9746;&#9744;&#9866;&nbsp;&nbsp;<span style="color: white" ><strong>Terminal</strong></span>
     </div>
-    <div class='console-container' style="padding-top: 10vh;background-color:rgba(12,25,255,.5);width:90vw;margin-left: auto;margin-right: auto;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;font-size: 2em">
-
         <!-- <div style="padding-top: 10vh">Hello I'm <span id='text'></span></div> -->
         &#36 hello I'm <span id='text'></span>
         <div class='console-underscore' id='console' class="mytext">&#95;</div>
     </div>
+ <!--</div>-->
     <div class="row" style="height:25vh;background-color:rgba(255,255,255,0.2);width:90vw;margin-left: auto;margin-right: auto;margin-top: 4vh;border-radius:5px">
         <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="border:2px dashed red;height:25vh">
 
@@ -71,14 +78,18 @@
 
         </div> -->
     </div>
-
-    <script src="scripts/script.js"></script>
-
-    <script src="js/bootstrap.min.js "></script>
-    <!--<script src="js/scripts.js "></script>-->
+    <script src="scripts/jquery.js"></script>
+   <script src="jquery-ui.min.js"></script> 
+    <script src="scripts/bootstrap.min.js "></script>
+    <script src="scripts/script.js "></script>
     <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js "></script>
-    <script src="js/scrolling-nav.js "></script>
+    <script src="scripts/jquery.easing.min.js "></script>
+    <!--<script src="scripts/scrolling-nav.js "></script>-->
+    <script>
+  $( function() {
+    $( "#resizable" ).resizable();
+  } );
+  </script>
 
 </body>
 
